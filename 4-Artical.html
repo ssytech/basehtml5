@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Artical区域 </title>
+		<h1>Artical\section区域</h1>
+		<p>设计页面包含Artical区域，包含页面的实际内容。</p><p>将使用标记来创建这个区域，该标记定义可独立于其他页面内容使用的内容</p>
+		<p>artical和section可以相互包含</p>
+		<style type="text/css">
+			 article > header h1 { 
+				 font-size: 40px; 
+				 float: left; 
+				 margin-left: 14px; 
+			 } 
+			
+			 article > header h1 a { 
+				 color: #000090; 
+				 text-decoration: none; 
+			 } 
+			
+			 article > section header h1 { 
+				 font-size: 20px; 
+				 margin-left: 25px; 
+			 } 
+			
+			 article p { 
+				 clear: both; 
+				 margin-top: 0px; 
+				 margin-left: 50px; 
+			 }
+			  article p.next-to-aside { 
+					 width: 500px; 
+				 } 
+				
+				 article >  section figure { 
+					 margin-left: 180px; 
+					 margin-bottom: 30px; 
+				 } 
+				
+				 article > section > menu {  
+					 margin-left: 120px; 
+				 } 	  
+				
+				 aside p {  
+				        position:relative; 
+				        left:0px; 
+				        top: -100px; 
+						 z-index: 1; 
+				        width: 200px;  
+				    	 float: right; 
+					    font-style: italic; 
+				       	 color: #99f; 
+				 }
+		</style>
+	</head>
+	 <article> 
+     <header> 
+          <h1> 
+               <a href="#" title="Link to this post" rel="bookmark">Article Heading</a> 
+          </h1> 
+     </header> 
+     <p> Primum non nocere ad vitam Paramus . . . </p> 
+     <section> 
+          <header> 
+               <h1>This is the first section heading</h1> 
+          </header> 
+          <p>Scientia potentia est qua nocent docentp . . .> 
+     </section>
+     <section> 
+	     <header> 
+	          <h1>Second section with mark, aside, menu & figure</h1> 
+	     </header> 
+	     <p class="next-to-aside"> . . .  <mark>veni, vidi, vici</mark>. Mater . . .</p> 
+	     <aside> 
+	          <p>This is an aside that has multiple lines. . . .</p> 
+	     </aside> 
+	     <menu label="File"> 
+	          <button type="button" onClick="JavaScript:alert('Clio . . .')">Clio</button> 
+	          <button type="button" onClick="JavaScript:alert('Thalia . . .')">Thalia
+	          </button> 
+	          <button type="button" onClick="JavaScript:alert 
+			                           ('Urania . . .')">Urania</button> 
+	          <button type="button" onClick="JavaScript:alert 
+			                           ('Calliope . . .')">Calliope</button> 
+	     </menu> 
+	     <figure><img src="stonehenge.jpg" alt="Stonehenge" width="200" height="131"/> 
+	          <figcaption>Figure 1. Stonehenge</figcaption> 
+	     </figure> 
+	 </section>
+	 </article> 
+	 <section> 
+	     <article> 
+	          Content 
+	     </article> 
+	     <article> 
+	          Content 
+	     </article> 
+	 </section>
+</html>
